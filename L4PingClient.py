@@ -28,7 +28,7 @@ def main():
                 data = ""
                 while not data:
                     data, server = clientSocket.recvfrom(1024)
-
+                    print("hello world!")
                     # If the resent value is correct, print the elapsed time
                     if data == str(i):
                         end = timer()
